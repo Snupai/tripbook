@@ -3,20 +3,29 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Tripbook Privacy Policy</title>
-    <meta name="description" content="Privacy policy for the Tripbook Android app.">
+    <title data-title-en="Tripbook Privacy Policy" data-title-de="Tripbook Datenschutzerklärung">Tripbook Privacy Policy</title>
+    <meta
+        name="description"
+        content="Privacy policy for the Tripbook Android app."
+        data-description-en="Privacy policy for the Tripbook Android app."
+        data-description-de="Datenschutzerklärung für die Android-App Tripbook.">
     <link rel="stylesheet" href="../styles.css">
+    <script src="../site.js" defer></script>
 </head>
 <body>
     <main class="page">
         <header class="site-header">
             <div class="brand">Tripbook</div>
             <nav class="nav" aria-label="Main navigation">
-                <a href="../">Home</a>
+                <a href="../">
+                    <span data-lang="en">Home</span>
+                    <span data-lang="de" hidden>Startseite</span>
+                </a>
+                <button type="button" class="language-toggle" data-language-toggle>Deutsch</button>
             </nav>
         </header>
 
-        <article class="document">
+        <article class="document" data-lang="en">
             <h1>Privacy Policy</h1>
             <p class="meta">Effective date: 2026-05-27</p>
 
@@ -46,8 +55,39 @@
             <p>For questions about this privacy policy, use the developer contact information listed on the app's Google Play Store page.</p>
         </article>
 
+        <article class="document" data-lang="de" hidden>
+            <h1>Datenschutzerklärung</h1>
+            <p class="meta">Gültig ab: 2026-05-27</p>
+
+            <p>Tripbook ist eine lokale Android-App zum Aufzeichnen von Fahrzeugfahrten. Die App erstellt keine Konten, zeigt keine Werbung, verwendet keine Analysefunktionen und synchronisiert keine Fahrtdaten mit einem Server. Internetzugriff wird verwendet, um Kartenkacheln für die Ortsauswahl zu laden.</p>
+
+            <h2>Daten, die die App speichert</h2>
+            <p>Tripbook speichert Fahrtdatensätze auf deinem Gerät, einschließlich Start- und Endzeiten, Start- und Endkoordinaten, berechneter Entfernung, Kategorie, Prüfstatus, von dir eingegebenen Notizen, gespeicherten Ortsregeln, Fahrzeug-Bluetooth-Informationen, Fahrzeugen, Kilometerständen, Arbeitszeit-Einstellungen und benutzerdefinierten Entfernungssätzen. Diese Daten werden in der privaten lokalen Datenbank und den lokalen Einstellungen der App gespeichert.</p>
+
+            <h2>Standortnutzung</h2>
+            <p>Tripbook erhebt Standortdaten, um Fahrzeugfahrten aufzuzeichnen. Wenn du eine Fahrt manuell startest, zeichnet die App den Standort auf, während eine Vordergrund-Benachrichtigung zur Aufzeichnung angezeigt wird.</p>
+            <p>Wenn du die automatische Aufzeichnung aktivierst, zeigt Tripbook eine laufende Vordergrund-Benachrichtigung an, während die App auf ein konfiguriertes Fahrzeug-Bluetooth-Gerät oder optionale Fahrbewegungsereignisse von Google Play Services wartet. Die App kann die Fahrtaufzeichnung starten und beenden, wenn sich ein konfiguriertes Fahrzeug-Bluetooth-Gerät verbindet oder trennt oder wenn Fahrbewegung beginnt oder endet, auch wenn die App geschlossen ist oder nicht verwendet wird. Dafür ist die Berechtigung für Standortzugriff im Hintergrund erforderlich, damit die Fahrtaufzeichnung fortgesetzt werden kann, wenn die App nicht sichtbar ist. Die bewegungsbasierte automatische Aufzeichnung benötigt auf unterstützten Android-Versionen außerdem die Berechtigung für körperliche Aktivität. Die automatische Aufzeichnung ist standardmäßig deaktiviert und kann in der App oder über die Benachrichtigung ausgeschaltet werden.</p>
+
+            <h2>Datenweitergabe</h2>
+            <p>Tripbook sendet keine Daten an den Entwickler oder an einen eigenen Server. Die App enthält keine Drittanbieter-SDKs für Analysefunktionen oder Werbung und keine gehostete Synchronisierung.</p>
+            <p>Du kannst Fahrten als CSV- oder PDF-Datei exportieren. Wenn du einen Export speicherst oder teilst, wird dieser Export von Android und der von dir gewählten App oder dem gewählten Speicherort verarbeitet.</p>
+
+            <h2>Kartenansicht</h2>
+            <p>Wenn du einen gespeicherten Ort auf der Karte auswählst, lädt Tripbook Kartenressourcen und Kartenkacheln von externen Kartenanbietern. Diese Anfragen können normale Netzwerkdaten wie deine IP-Adresse und den sichtbaren Kartenausschnitt an die Kartenanbieter übermitteln. Ausgewählte Ortskoordinaten werden lokal in der App gespeichert.</p>
+
+            <h2>Backups</h2>
+            <p>Android-Cloud-Backups und Geräteübertragungs-Backups sind für diese App deaktiviert. Die Datenbank und Einstellungen der App werden daher standardmäßig von Android-Backups ausgeschlossen.</p>
+
+            <h2>Berechtigungen</h2>
+            <p>Tripbook kann Berechtigungen für Internet, Standort, Standort im Hintergrund, Bluetooth, körperliche Aktivität, Benachrichtigungen und Vordergrunddienste anfordern. Diese Berechtigungen unterstützen Kartenanzeige, Fahrtaufzeichnung, automatische Aufzeichnung mit gekoppeltem Fahrzeug, bewegungsbasierte automatische Aufzeichnung und die dauerhafte Aufzeichnungsbenachrichtigung.</p>
+
+            <h2>Kontakt</h2>
+            <p>Bei Fragen zu dieser Datenschutzerklärung verwende bitte die Entwickler-Kontaktdaten, die auf der Google-Play-Store-Seite der App angegeben sind.</p>
+        </article>
+
         <footer class="site-footer">
-            <p>&copy; 2026 Tripbook. <a href="https://github.com/Snupai/tripbook">Source code</a>.</p>
+            <p data-lang="en">&copy; 2026 Tripbook. <a href="https://github.com/Snupai/tripbook">Source code</a>.</p>
+            <p data-lang="de" hidden>&copy; 2026 Tripbook. <a href="https://github.com/Snupai/tripbook">Quellcode</a>.</p>
         </footer>
     </main>
 </body>

@@ -24,10 +24,20 @@ a {
     color: var(--accent);
 }
 
+[hidden] {
+    display: none !important;
+}
+
 .page {
     width: min(760px, calc(100% - 32px));
     margin: 0 auto;
     padding: 44px 0;
+}
+
+.page-tools {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 24px;
 }
 
 .site-header {
@@ -46,8 +56,21 @@ a {
 
 .nav {
     display: flex;
+    align-items: center;
     gap: 18px;
     font-size: 15px;
+}
+
+.language-toggle {
+    min-height: 36px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 0 12px;
+    background: transparent;
+    color: var(--ink);
+    font: inherit;
+    font-size: 14px;
+    cursor: pointer;
 }
 
 .intro h1,
@@ -122,6 +145,11 @@ a {
         align-items: flex-start;
         flex-direction: column;
         gap: 10px;
+    }
+
+    .nav {
+        width: 100%;
+        justify-content: space-between;
     }
 
     .intro h1,

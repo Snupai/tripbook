@@ -3,22 +3,36 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Tripbook</title>
-    <meta name="description" content="Tripbook is a local-first Android trip recording app.">
+    <title data-title-en="Tripbook" data-title-de="Tripbook">Tripbook</title>
+    <meta
+        name="description"
+        content="Tripbook is a local-first Android trip recording app."
+        data-description-en="Tripbook is a local-first Android trip recording app."
+        data-description-de="Tripbook ist eine lokale Android-App zum Aufzeichnen von Fahrzeugfahrten.">
     <link rel="stylesheet" href="styles.css">
+    <script src="site.js" defer></script>
 </head>
 <body>
     <main class="page">
+        <div class="page-tools">
+            <button type="button" class="language-toggle" data-language-toggle>Deutsch</button>
+        </div>
+
         <section class="intro">
             <h1>Tripbook</h1>
-            <p>Tripbook is a local-first Android trip recording app for keeping vehicle trip records on your device.</p>
+            <p data-lang="en">Tripbook is a local-first Android trip recording app for keeping vehicle trip records on your device.</p>
+            <p data-lang="de" hidden>Tripbook ist eine lokale Android-App zum Aufzeichnen von Fahrzeugfahrten auf deinem Gerät.</p>
             <div class="actions">
-                <a class="button" href="privacy-policy/">Privacy Policy</a>
+                <a class="button" href="privacy-policy/">
+                    <span data-lang="en">Privacy Policy</span>
+                    <span data-lang="de" hidden>Datenschutzerklärung</span>
+                </a>
             </div>
         </section>
 
         <footer class="site-footer">
-            <p>&copy; 2026 Tripbook. Tripbook does not create accounts, show ads, use analytics, or sync trip data to a server. <a href="https://github.com/Snupai/tripbook">Source code</a>.</p>
+            <p data-lang="en">&copy; 2026 Tripbook. Tripbook does not create accounts, show ads, use analytics, or sync trip data to a server. <a href="https://github.com/Snupai/tripbook">Source code</a>.</p>
+            <p data-lang="de" hidden>&copy; 2026 Tripbook. Tripbook erstellt keine Konten, zeigt keine Werbung, verwendet keine Analysefunktionen und synchronisiert keine Fahrtdaten mit einem Server. <a href="https://github.com/Snupai/tripbook">Quellcode</a>.</p>
         </footer>
     </main>
 </body>

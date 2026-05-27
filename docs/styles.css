@@ -51,7 +51,7 @@ a {
 }
 
 .intro h1,
-.content h1 {
+.document h1 {
     margin: 0 0 12px;
     font-size: 42px;
     line-height: 1.1;
@@ -84,20 +84,20 @@ a {
     text-decoration: none;
 }
 
-.content {
+.document {
     margin-top: 28px;
 }
 
-.content h1 {
+.document h1 {
     font-size: 38px;
 }
 
-.content h2 {
+.document h2 {
     margin: 30px 0 8px;
     font-size: 22px;
 }
 
-.content p {
+.document p {
     margin: 10px 0;
 }
 
@@ -125,7 +125,7 @@ a {
     }
 
     .intro h1,
-    .content h1 {
+    .document h1 {
         font-size: 34px;
     }
 }

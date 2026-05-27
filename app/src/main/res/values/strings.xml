@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Tripbook</string>
+    <string name="default_place_radius">150</string>
+    <string name="match_trip_start">Match trip start</string>
+    <string name="match_trip_end">Match trip end</string>
+    <string name="use_work_hours">Use work-hours categorization</string>
+</resources>

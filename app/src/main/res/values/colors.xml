@@ -1,0 +1,14 @@
+<resources>
+    <color name="app_bg">#F5F6F2</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="surface_muted">#EEF1EC</color>
+    <color name="border">#D8DED5</color>
+    <color name="ink">#111714</color>
+    <color name="muted">#66706A</color>
+    <color name="accent">#1F8A5B</color>
+    <color name="accent_text">#16724A</color>
+    <color name="on_accent">#FFFFFF</color>
+    <color name="warn">#C25A2C</color>
+    <color name="warn_text">#B65026</color>
+    <color name="on_warn">#FFFFFF</color>
+</resources>

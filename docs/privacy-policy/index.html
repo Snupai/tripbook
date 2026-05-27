@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tripbook Privacy Policy</title>
+    <meta name="description" content="Privacy policy for the Tripbook Android app.">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <main class="page">
+        <header class="site-header">
+            <div class="brand">Tripbook</div>
+            <nav class="nav" aria-label="Main navigation">
+                <a href="../">Home</a>
+                <a href="https://github.com/Snupai/tripbook">Source</a>
+            </nav>
+        </header>
+
+        <article class="content">
+            <h1>Tripbook Privacy Policy</h1>
+            <p class="meta">Effective date: 2026-05-27</p>
+
+            <p>Tripbook is a local-first Android trip recording app. It does not create accounts, show ads, use analytics, or sync trip data to a server. It uses internet access to load map tiles for the place picker.</p>
+
+            <h2>Data The App Stores</h2>
+            <p>Tripbook stores trip records on your device, including trip start and end times, start and end coordinates, calculated distance, category, review status, notes you enter, saved place rules, vehicle Bluetooth information, vehicles, odometer readings, work-hours settings, and custom distance rates. This data is stored in the app's private local database and preferences.</p>
+
+            <h2>Location Use</h2>
+            <p>Tripbook collects location data to record vehicle trips. When you start a trip manually, the app records location while a foreground tracking notification is shown.</p>
+            <p>If you turn on auto-recording, Tripbook keeps an ongoing foreground notification while it waits for a configured vehicle Bluetooth device or optional driving-motion transitions from Google Play Services. It can start and stop trip recording when a configured vehicle Bluetooth device connects or disconnects, or when driving motion starts or ends, even when the app is closed or not in use. This requires background location permission so trip recording can continue when the app is not visible. Motion auto-recording also requires physical activity permission on supported Android versions. Auto-recording is off by default and can be turned off in the app or from the notification.</p>
+
+            <h2>Data Sharing</h2>
+            <p>Tripbook does not send data to the developer or any server. The app does not include third-party analytics, advertising SDKs, or hosted sync.</p>
+            <p>You can choose to export trip history as CSV or PDF. When you save or share an export, that export is handled by Android and the app or location you choose.</p>
+
+            <h2>Map Picker</h2>
+            <p>When you pick a saved place on the map, Tripbook loads map resources and tiles from external map providers. Those requests may expose normal network information such as your IP address and the visible map area to the map providers. Picked place coordinates are stored locally in the app.</p>
+
+            <h2>Backups</h2>
+            <p>Android cloud backup and device-transfer backup are disabled for this app, so the app's database and preferences are excluded from Android backup by default.</p>
+
+            <h2>Permissions</h2>
+            <p>Tripbook may request internet, location, background location, Bluetooth, physical activity, notification, and foreground service permissions. These permissions support map display, trip recording, paired-car auto-recording, motion auto-recording, and the persistent recording notification.</p>
+
+            <h2>Contact</h2>
+            <p>For questions about this privacy policy, use the developer contact information listed on the app's Google Play Store page.</p>
+        </article>
+
+        <footer class="site-footer">
+            <p>&copy; 2026 Tripbook</p>
+        </footer>
+    </main>
+</body>
+</html>
